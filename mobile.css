@@ -1,0 +1,76 @@
+#navbar .menu {
+    display: none;
+}
+#navbar .contanier {
+    display: flex;
+    flex-direction: column;
+}
+#navbar .contanier ul {
+    display: flex;
+    margin-top: 0.3rem;
+}
+ 
+/* Showcase */
+#showcase .showcase-contanier {
+    display: grid; 
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Footer */
+#footer .footer-contants {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+}
+#footer .copyright {
+    grid-column: 1;
+ }
+ #email {
+    height: 2rem;
+    width: 29rem;
+    margin-bottom: 0.7rem;
+}
+#footer .btn1 {
+    padding: 0.5rem 12.3rem;
+}
+#footer .footer-contants > div:nth-child(3){
+    margin: 1.3rem 0;
+}
+#footer .footer-contants > div:nth-child(3) h1 {
+    margin-bottom: 0.8rem;
+}
+#footer .footer-contants > div:nth-child(4){
+    margin-bottom: 1rem;
+}
+/* Articles */
+
+#articles .article-contanier {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+#articles .article-contanier > *:first-child,
+#articles .article-contanier > *:last-child {
+    grid-template-columns: 1fr;
+    grid-column: 1; 
+}
+/* about page link a */
+#about .sidebar a {
+    display: flex;
+    padding: 0.5rem 2rem;
+}
+/* article page link a */
+#article .sidebar a {
+    display: flex;
+    padding: 0.5rem 2rem;
+}
+
+@media(max-width: 600px) {
+    #articles .article-contanier {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+}
